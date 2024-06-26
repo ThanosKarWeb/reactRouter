@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 function HelpLayout() {
   return (
@@ -8,6 +8,12 @@ function HelpLayout() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
         illum.
       </p>
+
+      <nav>
+        <NavLink to="faq">View the FAQ</NavLink>
+        <NavLink to="contact">Contact Us</NavLink>
+      </nav>
+
       <Outlet />
     </div>
   );
