@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 
-function RouteLayout() {
+function RootLayout() {
   return (
     <div className="root-layout">
       <header>
@@ -18,4 +18,4 @@ function RouteLayout() {
   );
 }
 
-export default RouteLayout;
+export default RootLayout;
