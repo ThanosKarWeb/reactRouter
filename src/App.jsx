@@ -10,6 +10,7 @@ import Careers from "./pages/careers/careers";
 import { careersLoader } from "./pages/careers/careersLoader";
 import CareerDetails from "./pages/careers/CareerDetails";
 import { careerDetailsLoader } from "./pages/careers/careerDetailsLoader";
+import CareersError from "./pages/careers/CareersError";
 
 // Layouts
 import RootLayout from "./layouts/RootLayout";
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       {
         path: "careers",
         element: <CareersLayout />,
+        errorElement: <CareersError />,
         children: [
           {
             index: true,
