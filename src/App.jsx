@@ -6,6 +6,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Faq from "./pages/help/Faq";
 import Contact from "./pages/help/Contact";
+import { contactAction } from "./pages/help/contactAction";
 import Careers from "./pages/careers/careers";
 import { careersLoader } from "./pages/careers/careersLoader";
 import CareerDetails from "./pages/careers/CareerDetails";
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
         element: <HelpLayout />,
         children: [
           { path: "faq", element: <Faq /> },
-          { path: "contact", element: <Contact /> },
+          { path: "contact", element: <Contact />, action: contactAction },
         ],
       },
       {
